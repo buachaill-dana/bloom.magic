@@ -1,0 +1,29 @@
+{
+  "name": "bloom.magic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buachaill-dana/bloom.magic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buachaill-dana/bloom.magic/issues"
+  },
+  "homepage": "https://github.com/buachaill-dana/bloom.magic#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "jimp": "^0.22.10",
+    "pexels": "^1.4.0",
+    "telegraf": "^4.12.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -7,7 +7,7 @@ const bot: Telegraf<Context<Update>> = new Telegraf(process.env.BOT_TOKEN)
 
 bot.start((ctx) => {
     let message = `WELCOME TO BLOOM MAGIC CLUB ❗️`
-    console.log(`>> Request from: ${ctx}`)
+    console.log(`>> Request from: ${ctx.update.message.from.username}`)
     ctx.reply(message)
 })
 

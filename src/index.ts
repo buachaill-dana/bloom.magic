@@ -16,7 +16,7 @@ require('dotenv').config()
 import express from "express";
 import {Telegraf} from "telegraf";
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Telegraf(process.env.BOT_TOKEN || '');
 const app = express();
 const port = 443;
 const webhookDomain = 'https://new-bloommagic.glitch.me'
@@ -32,7 +32,7 @@ async function main() {
         ctx.reply(message)
     })
     // bot.on("text", ctx => ctx.reply("Hello"));
-    app.get("/health", (req, res) => res.send({ status: "ok" }))
+    app.get("/health", (_req: any, res: { send: (arg0: { status: string; }) => any; }) => res.send({ status: "ok" }))
     app.listen(port, () => console.log("Listening on port", port))
 }
 

@@ -11,4 +11,9 @@ bot.start((ctx) => {
     ctx.reply(message)
 })
 
-bot.launch()
+bot.launch({
+    webhook: {
+        domain: 'https://new-bloommagic.glitch.me',
+        port: 80
+    }
+})

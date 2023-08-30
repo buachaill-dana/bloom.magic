@@ -1,27 +1,12 @@
 {
-  "name": "test-ts",
+  "name": "bloom.magic-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "engines": {
-    "node": "16"
-  },
+  "description": "Bloom Magic Telegram bot",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^20.5.7",
-    "ts-node": "^10.9.1",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.2.2"
+    "start": "node index.js"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "telegraf": "^4.12.2"
+    "telegraf": "4.12.2"
   }
 }
